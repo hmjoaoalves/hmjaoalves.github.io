@@ -571,7 +571,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 100px;
+	padding: 20px 50px;
 }
 
 .contato-box{
@@ -1023,25 +1023,19 @@ textarea{
 }
 
 
-@media(max-width:450px){
+@media(max-width:460px){
     html{
         font-size: 50%;
     }
 
-    .categories{
-        width: 100vw;
-        display: table;
-        vertical-align: middle;
-        margin-left: 50px;
-        font-size: 15pt;
+    .categories, .popular-product{
+        display: flex;
+        flex-direction: column;
+        width: 280px;
     }
     
-    .popular-product{
-        width: 100vw;
-        display: table;
-        vertical-align: middle;
-        margin-left: 50px;
-        font-size: 15pt;
+    .header .search-form {
+        width: 250px;
     }
 
     .footer-container{
@@ -1074,7 +1068,9 @@ textarea{
     .product-box .cart-btn{
         font-size: 12pt;
     }
-    
+    #clients{
+        width: 290px;
+    }
     .clients{
         font-size: 15pt;
         width: 250px;
@@ -1088,17 +1084,23 @@ textarea{
         width: 400px;
     }
     .footer-container{
-        width: 400px
+        width: 300px
     }
-    .categories, .popular-product{
-        width: 350px;
-    }
+    
     .inner-home img{
-        width: 350px;
+        width: 250px;
     }
 
     .imgcontat img{
-        width: 350px;
+        width: 250px;
+    }
+
+    .logo p{
+        display: none;
+    }
+
+    .footer-container{
+        width: 200px;
     }
 }
 
